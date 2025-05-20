@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Your Name - Portfolio</title>
+        <title>NikhilSambarapu-Portfolio</title>
         <meta name="description" content="Portfolio website showcasing my work and skills" />
       </Helmet>
 
