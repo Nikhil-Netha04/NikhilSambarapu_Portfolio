@@ -61,35 +61,17 @@ const AboutSection = () => {
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-          Hello! I'm <span className="text-teal-400 font-bold">Nikhil</span>, a passionate software developer &  AI enthusiast dedicated to crafting innovative solutions that make a real impact.
-          </motion.p>
+          <p>
+            Hello! I'm <span className="text-teal-400 font-bold">Nikhil</span>, a passionate Software Developer &  AI enthusiast dedicated to crafting innovative solutions that make a real impact.
+          </p>
 
-          <motion.div
-            className="flex flex-wrap justify-center gap-y-3 gap-x-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-          >
-            {[
-              ['Full-Stack Development', 'bg-teal-400'],
-              ['Machine Learning', 'bg-blue-400'],
-              ['AI Implementation', 'bg-purple-400'],
-              ['Problem Solving', 'bg-pink-400'],
-            ].map(([text, color], idx) => (
-              <div key={idx} className="flex items-center gap-2">
-                <div className={`w-2 h-2 rounded-full ${color}`}></div>
-                <span className="text-gray-200 text-lg">{text}</span>
-              </div>
-            ))}
-          </motion.div>
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 justify-center gap-y-3 gap-x-6 max-w-2xl mx-auto"> 
+          </div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 1.0 }}
-          >
-            With expertise in <span className="text-teal-300 font-semibold">modern web technologies</span> and a strong foundation in <span className="text-blue-300 font-semibold">machine learning</span>, I specialize in building scalable applications and intelligent systems. My approach combines technical excellence with creative problem-solving, enabling me to deliver solutions that are both innovative and practical. I'm passionate about leveraging <span className="text-purple-300 font-semibold">cutting-edge technologies</span> to solve complex challenges and create meaningful impact.
-          </motion.p>
+           <p>
+            With expertise in <span className="text-teal-300 font-semibold">modern web technologies</span> and a <span className="text-blue-300 font-semibold">strong foundation in Full-stack Web development and data structures & algorithms</span>, I specialize in building scalable applications and efficient systems. My approach combines technical excellence with creative problem-solving, enabling me to deliver solutions that are both innovative and practical. I'm familiar with <span className="text-purple-300 font-semibold">AI tools and basic machine learning concepts</span>, and passionate about leveraging cutting-edge technologies to solve complex challenges and create meaningful impact.
+          </p>
 
           {/* Social Links and Resume Button */}
           <motion.div
