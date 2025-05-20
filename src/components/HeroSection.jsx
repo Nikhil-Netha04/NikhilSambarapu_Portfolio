@@ -162,7 +162,7 @@ const HeroSection = () => {
               
               {/* Profile image */}
               <img
-                src="src/assets/1.jpg"
+                src="1.jpg"
                 alt="Nikhil Sambarapu"
                 className="w-full h-full object-cover"
               />
