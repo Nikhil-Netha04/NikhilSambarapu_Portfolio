@@ -1,10 +1,8 @@
 // src/components/AboutSection.jsx
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const AboutSection = () => {
-  const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });
   const [rotation, setRotation] = useState(0);
 
   // Replace these URLs with your actual social media and resume links
@@ -14,59 +12,30 @@ const AboutSection = () => {
     resumeURL: "/Nikhil Resume.pdf" 
   };
 
-  useEffect(() => {
-    if (inView) {
-      const interval = setInterval(() => {
-        setRotation(prev => (prev + 1) % 360);
-      }, 50);
-      return () => clearInterval(interval);
-    }
-  }, [inView]);
-
-  const variants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } },
-  };
-
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-slate-900 to-slate-800">
       <div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-6 lg:px-8">
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={inView ? 'visible' : 'hidden'}
-          variants={variants}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500">
             About Me
           </h2>
-          <motion.div
+          <div
             className="w-32 h-2 bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 mx-auto mb-6 rounded-full"
-            initial={{ width: 0 }}
-            animate={inView ? { width: '8rem' } : { width: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          ></motion.div>
-        </motion.div>
+          ></div>
+        </div>
 
         {/* Text Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+        <div
           className="w-full mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-lg md:text-xl leading-loose text-gray-300"
         >
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
           <p>
             Hello! I'm <span className="text-teal-400 font-bold">Nikhil</span>, a passionate Software Developer &  AI enthusiast dedicated to crafting innovative solutions that make a real impact.
           </p>
 
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 justify-center gap-y-3 gap-x-6 max-w-2xl mx-auto"> 
+            className="grid grid-cols-1 sm:grid-cols-2 justify-center gap-y-3 gap-x-6 max-w-2xl mx-auto"
+          >
+            
           </div>
 
            <p>
@@ -74,11 +43,8 @@ const AboutSection = () => {
           </p>
 
           {/* Social Links and Resume Button */}
-          <motion.div
+          <div
             className="flex flex-wrap justify-center gap-4 pt-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
           >
             {/* GitHub Link */}
             <motion.a
@@ -134,8 +100,8 @@ const AboutSection = () => {
               </svg>
               Resume
             </motion.a>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </section>
   );
