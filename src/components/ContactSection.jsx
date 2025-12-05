@@ -107,22 +107,31 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                {/* Timings with clock icon */}
-                <div className="flex items-start">
-                  <div className="text-teal-400 mr-4 mt-1">
-                    {/* Clock / timing icon */}
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3M12 6a9 9 0 100 18 9 9 0 000-18z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-medium text-white mb-1">Timings</h4>
-                    <p className="text-gray-300">
-                      Mon – Fri: 9:00 AM – 6:00 PM
-                    </p>
-                  </div>
-                </div>
-              </div>
+              {/* Timings with clock icon */}
+<div className="flex items-start">
+  <div className="text-teal-400 mr-4 mt-1">
+    {/* Clock icon */}
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         className="h-6 w-6" 
+         fill="none" 
+         viewBox="0 0 24 24" 
+         stroke="currentColor">
+      <path strokeLinecap="round" 
+            strokeLinejoin="round" 
+            strokeWidth={2} 
+            d="M12 6a9 9 0 100 18 9 9 0 000-18zm0 4v4l3 3" />
+    </svg>
+  </div>
+  
+  <div>
+    <h4 className="text-lg font-medium text-white mb-1">Timings</h4>
+    <p className="text-gray-300 leading-relaxed">
+      Monday – Friday: <span className="text-teal-400 font-medium">9:00 AM – 6:00 PM</span> <br />
+      Saturday – Sunday: <span className="text-teal-400 font-medium">Available on request</span>
+    </p>
+  </div>
+</div>
+
               
               <div className="mt-10">
                 <h4 className="text-lg font-medium text-white mb-4">Connect with me</h4>
