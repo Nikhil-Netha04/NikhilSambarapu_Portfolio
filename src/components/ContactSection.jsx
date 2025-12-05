@@ -118,12 +118,6 @@ const ContactSection = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <div>
-                    <h4 className="text-lg font-medium text-white mb-1">Working Hours</h4>
-                    <p className="text-gray-300">
-                      Monday - Friday: 9 AM - 6PM
-                    </p>
-                  </div>
                 </div>
               </div>
               
