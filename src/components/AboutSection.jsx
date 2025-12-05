@@ -9,7 +9,7 @@ const AboutSection = () => {
   const socialLinks = {
     github: "https://github.com/nikhil-netha04",
     linkedin: "https://www.linkedin.com/in/nikhil-sambarapu-1699582b7/",
-    resumeURL: "public/Nikhil_ResumeFS.pdf" 
+    resumeURL: "/Nikhil_ResumeFS.pdf" 
   };
 
   return (
@@ -80,7 +80,7 @@ const AboutSection = () => {
               whileHover={{ scale: 1.05, boxShadow: '0 0 15px rgba(168, 85, 247, 0.5)' }}
               whileTap={{ scale: 0.95 }}
               href={socialLinks.resumeURL}
-              download="Nikhil_Resume.pdf"
+              download="public/Nikhil_ResumeFS.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 text-lg bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg shadow-purple-500/20"
