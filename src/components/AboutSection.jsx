@@ -63,18 +63,20 @@ const AboutSection = () => {
             </motion.a>
 
             {/* Resume Button - downloads Nikhil_ResumeFS.pdf from public */}
-            <motion.a
-              whileHover={{ scale: 1.05, boxShadow: '0 0 15px rgba(168, 85, 247, 0.5)' }}
-              whileTap={{ scale: 0.95 }}
-              href={socialLinks.resumeURL}
-              download="Nikhil_ResumeFS.pdf"
-              className="px-6 py-3 text-lg bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg shadow-purple-500/20"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}/>
-              </svg>
-              Resume
-            </motion.a>
+           <motion.a
+  whileHover={{ scale: 1.05, boxShadow: '0 0 15px rgba(168, 85, 247, 0.5)' }}
+  whileTap={{ scale: 0.95 }}
+  href="/Nikhil_ResumeFS.pdf"
+  download="Nikhil_ResumeFS.pdf"
+  className="px-6 py-3 text-lg bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg shadow-purple-500/20"
+>
+  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+      strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
+  </svg>
+  Resume
+</motion.a>
+
           </div>
         </div>
       </div>
