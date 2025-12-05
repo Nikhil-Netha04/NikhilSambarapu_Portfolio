@@ -127,7 +127,7 @@ const ContactSection = () => {
     <h4 className="text-lg font-medium text-white mb-1">Timings</h4>
     <p className="text-gray-300 leading-relaxed">
       Monday – Friday: <span className="text-teal-400 font-medium">9:00 AM – 6:00 PM</span> <br />
-      Saturday – Sunday: <span className="text-teal-400 font-medium">Available on request</span>
+
     </p>
   </div>
 </div>
