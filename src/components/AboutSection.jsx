@@ -9,7 +9,7 @@ const AboutSection = () => {
   const socialLinks = {
     github: "https://github.com/nikhil-netha04",
     linkedin: "https://www.linkedin.com/in/nikhil-sambarapu-1699582b7/",
-    resumeURL: "/Nikhil Resume.pdf" 
+    resumeURL: "/Nikhil_ResumeFS.pdf"" 
   };
 
   return (
